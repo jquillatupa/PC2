@@ -1,0 +1,25 @@
+<h1>Listing detalleapuesta</h1>
+
+<table>
+  <tr>
+    <th>Idapuesta</th>
+    <th>Idcaballo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @detalleapuesta.each do |detalleapuestum| %>
+  <tr>
+    <td><%= detalleapuestum.idapuesta %></td>
+    <td><%= detalleapuestum.idcaballo %></td>
+    <td><%= link_to 'Show', detalleapuestum %></td>
+    <td><%= link_to 'Edit', edit_detalleapuestum_path(detalleapuestum) %></td>
+    <td><%= link_to 'Destroy', detalleapuestum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Detalleapuestum', new_detalleapuestum_path %>

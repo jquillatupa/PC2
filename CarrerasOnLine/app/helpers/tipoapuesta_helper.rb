@@ -1,0 +1,2 @@
+module TipoapuestaHelper
+end

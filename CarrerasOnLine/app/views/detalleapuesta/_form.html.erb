@@ -1,0 +1,25 @@
+<%= form_for(@detalleapuestum) do |f| %>
+  <% if @detalleapuestum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@detalleapuestum.errors.count, "error") %> prohibited this detalleapuestum from being saved:</h2>
+
+      <ul>
+      <% @detalleapuestum.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idapuesta %><br />
+    <%= f.number_field :idapuesta %>
+  </div>
+  <div class="field">
+    <%= f.label :idcaballo %><br />
+    <%= f.number_field :idcaballo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

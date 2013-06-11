@@ -11,8 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20130611015120) do
+ActiveRecord::Schema.define(:version => 20130611022848) do
 
   create_table "apuesta", :force => true do |t|
     t.integer  "idapuesta"
@@ -23,9 +22,6 @@ ActiveRecord::Schema.define(:version => 20130611015120) do
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
-=======
-ActiveRecord::Schema.define(:version => 20130611020200) do
->>>>>>> 766b166fe2288c3d098ed21cd8a0316a3d1b21fd
 
   create_table "caballos", :force => true do |t|
     t.string   "nombre"
@@ -46,6 +42,19 @@ ActiveRecord::Schema.define(:version => 20130611020200) do
     t.string   "descripcion"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "detalleapuesta", :force => true do |t|
+    t.integer  "idapuesta"
+    t.integer  "idcaballo"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "tipoapuesta", :force => true do |t|
+    t.string   "nombre"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
