@@ -1,4 +1,8 @@
 CarrerasOnLine::Application.routes.draw do
+  resources :tweets
+  match "update" => "tweets#update_status"
+
+
    root :to => "caballos#index"
   resources :users
 
