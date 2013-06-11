@@ -1,0 +1,31 @@
+<h1>Listing apuesta</h1>
+
+<table>
+  <tr>
+    <th>Idapuesta</th>
+    <th>Idtipoapuesta</th>
+    <th>Idcarrera</th>
+    <th>Montoapuesta</th>
+    <th>Montopagado</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @apuesta.each do |apuestum| %>
+  <tr>
+    <td><%= apuestum.idapuesta %></td>
+    <td><%= apuestum.idtipoapuesta %></td>
+    <td><%= apuestum.idcarrera %></td>
+    <td><%= apuestum.montoapuesta %></td>
+    <td><%= apuestum.montopagado %></td>
+    <td><%= link_to 'Show', apuestum %></td>
+    <td><%= link_to 'Edit', edit_apuestum_path(apuestum) %></td>
+    <td><%= link_to 'Destroy', apuestum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Apuestum', new_apuestum_path %>

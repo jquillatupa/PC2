@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  idapuesta: 1
+  idtipoapuesta: 1
+  idcarrera: 1
+  montoapuesta: 1
+  montopagado: 1
+
+two:
+  idapuesta: 1
+  idtipoapuesta: 1
+  idcarrera: 1
+  montoapuesta: 1
+  montopagado: 1

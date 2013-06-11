@@ -1,0 +1,29 @@
+<%= form_for(@caballoxcarerra) do |f| %>
+  <% if @caballoxcarerra.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@caballoxcarerra.errors.count, "error") %> prohibited this caballoxcarerra from being saved:</h2>
+
+      <ul>
+      <% @caballoxcarerra.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idcarrera %><br />
+    <%= f.number_field :idcarrera %>
+  </div>
+  <div class="field">
+    <%= f.label :idcaballo %><br />
+    <%= f.number_field :idcaballo %>
+  </div>
+  <div class="field">
+    <%= f.label :puesto %><br />
+    <%= f.number_field :puesto %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

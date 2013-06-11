@@ -1,4 +1,10 @@
 CarrerasOnLine::Application.routes.draw do
+  resources :apuesta
+
+
+  resources :caballoxcarerras
+
+
   resources :carreras
 
 

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  idcarrera: 1
+  idcaballo: 1
+  puesto: 1
+
+two:
+  idcarrera: 1
+  idcaballo: 1
+  puesto: 1

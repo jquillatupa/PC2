@@ -1,0 +1,27 @@
+<h1>Listing caballoxcarerras</h1>
+
+<table>
+  <tr>
+    <th>Idcarrera</th>
+    <th>Idcaballo</th>
+    <th>Puesto</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @caballoxcarerras.each do |caballoxcarerra| %>
+  <tr>
+    <td><%= caballoxcarerra.idcarrera %></td>
+    <td><%= caballoxcarerra.idcaballo %></td>
+    <td><%= caballoxcarerra.puesto %></td>
+    <td><%= link_to 'Show', caballoxcarerra %></td>
+    <td><%= link_to 'Edit', edit_caballoxcarerra_path(caballoxcarerra) %></td>
+    <td><%= link_to 'Destroy', caballoxcarerra, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Caballoxcarerra', new_caballoxcarerra_path %>
