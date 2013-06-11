@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     @prueba = session[:current_user_id];
     
   end
+  
   def index
     @users = User.all
 

@@ -1,5 +1,5 @@
 CarrerasOnLine::Application.routes.draw do
-   root :to => "users#login"
+   root :to => "caballos#index"
   resources :users
 
 
