@@ -12,12 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :idcarrera %><br />
-    <%= f.number_field :idcarrera %>
+    
+    <%= f.label :Carrera %><br />
+    <%= f.collection_select :idcarrera,
+     Carrera.all, :id, :descripcion, :prompt =>true %>
+
   </div>
   <div class="field">
-    <%= f.label :idcaballo %><br />
-    <%= f.number_field :idcaballo %>
+   <%= f.label :Caballo %><br />
+    <%= f.collection_select :idcaballo,
+     Caballo.all, :id, :nombre, :prompt =>true %>
   </div>
   <div class="field">
     <%= f.label :puesto %><br />
